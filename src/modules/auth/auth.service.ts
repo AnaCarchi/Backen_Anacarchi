@@ -25,7 +25,7 @@ export class AuthService {
 
         return this.userRepository.save(objUser) //para guardar enla BDD
     }
-    login(credenciales: LoginAuthDto){
+    async login(credenciales: LoginAuthDto){
 
         const {email,password}=credenciales //ensete caso necesitamos los dos campos
         const user=await this.userRepository.findOne({

@@ -37,3 +37,4 @@ export class CategoriaController {
     return this.categoriaService.remove(+id);
   }
 }
+//#37
